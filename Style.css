@@ -1,0 +1,83 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f3f6fa;
+}
+
+h1 {
+    text-align: center;
+    color: #17365d;
+    margin-bottom: 30px;
+}
+
+.example {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    padding: 22px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.example p {
+    color: #2563eb;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-container div {
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Ví dụ 1: Khoảng cách hàng và cột đều là 20px */
+.grid-example-1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-example-1 div {
+    background-color: lightblue;
+}
+
+/* Ví dụ 2: Hàng cách nhau 30px, cột cách nhau 10px */
+.grid-example-2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px;
+}
+
+.grid-example-2 div {
+    background-color: lightgreen;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 500px) {
+    body {
+        padding: 12px;
+    }
+
+    .example {
+        padding: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
